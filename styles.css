@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+body{
+    background-color:hsl(217, 54%, 11%);
+    font-family: Outfit;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+    color: hsl(0, 0%, 100%);
+}
+.attribution a { 
+    color: hsl(178, 100%, 50%);
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(216, 50%, 16%);
+    width: 300px;
+    padding: 20px ;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px hsl(215, 32%, 27%);
+    margin-bottom: 20px;
+}
+.nft-img{
+    position: relative;
+    
+}
+.nft-img .icon-view{
+    width: 60px;
+    padding: 40%;
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 0;
+    bottom: 0;
+    visibility: hidden;
+    background-color: hsla(178, 100%, 50%, 0.4);
+}
+
+.nft-img img{
+    width: 300px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.nft-img:hover .icon-view{
+    visibility: visible;
+}
+
+p{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: 300;
+    color: rgb(158, 158, 158);
+}
+h1{
+    display: inline-block;
+    font-size: 20px;
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+h1:hover{
+    color: hsl(178, 100%, 50%);
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: gray;
+    margin-bottom: 20px;
+}
+.detail{
+    display: flex;
+    align-items: center;
+}
+.detail img{
+    width: 10px; 
+    padding-right: 5px;
+}
+.detail .clock{
+    width: 20px;
+}
+.price-eth{
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-pic{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: hsl(0, 0%, 100%);  
+    margin-right: 15px;
+}
+span{
+    color: hsl(0, 0%, 100%);
+    cursor: pointer;
+}
+span:hover{
+    color: hsl(178, 100%, 50%);;
+}
+@media (max-width: 450px) {
+    .card{
+        width: 220px; 
+    }
+    .nft-img{
+        width: 200px;
+    }
+}
